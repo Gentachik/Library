@@ -9,12 +9,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="52f5a818-e3aa-4cd7-aeb3-020050404494" name="Changes" comment="Creating a people view">
+    <list default="true" id="52f5a818-e3aa-4cd7-aeb3-020050404494" name="Changes" comment="Finishing person views">
+      <change afterPath="$PROJECT_DIR$/src/main/java/library/mvc/controllers/BooksController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/library/mvc/dao/BookDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/library/mvc/dao/BookMapper.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/resources/database.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/books/edit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/books/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/books/new.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/library/mvc/dao/PersonDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/mvc/dao/PersonDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/library/mvc/dao/PersonMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/mvc/dao/PersonMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/library/mvc/models/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/mvc/models/Book.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/library/mvc/models/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/mvc/models/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/people/edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/people/edit.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/people/show.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/people/show.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -90,6 +97,11 @@
     ]
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="library.mvc.dao" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="Tomcat 9" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
       <option name="UPDATING_POLICY" value="restart-server" />
@@ -191,7 +203,7 @@
       <workItem from="1690370995244" duration="2510000" />
       <workItem from="1690376015302" duration="4215000" />
       <workItem from="1690380799753" duration="2086000" />
-      <workItem from="1690397951831" duration="7203000" />
+      <workItem from="1690397951831" duration="14869000" />
     </task>
     <task id="LOCAL-00001" summary="Starting a library application">
       <created>1690329708436</created>
@@ -207,7 +219,14 @@
       <option name="project" value="LOCAL" />
       <updated>1690400998785</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Finishing person views">
+      <created>1690405743283</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1690405743284</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -216,6 +235,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Starting a library application" />
     <MESSAGE value="Creating a people view" />
-    <option name="LAST_COMMIT_MESSAGE" value="Creating a people view" />
+    <MESSAGE value="Finishing person views" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finishing person views" />
   </component>
 </project>
