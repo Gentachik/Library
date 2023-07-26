@@ -23,11 +23,9 @@ public class Person {
     public void setYearOfBirth(int yearOfBirth) {
         this.yearOfBirth = yearOfBirth;
     }
-
     public String getFullName() {
         return fullName;
     }
-
     public int getYearOfBirth() {
         return yearOfBirth;
     }

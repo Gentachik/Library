@@ -5,10 +5,12 @@
   <title>Show</title>
 </head>
 <body>
-<p th:text="${person.getFullName() + ', ' + person.getYearOfBirth()()}">AGE</p>
-
-<a th:href="@{/people/{id}/edit(id=${person.getId()})}">Edit</a>
-
+<p th:text="${person.getFullName() + ', ' + person.getYearOfBirth()}">AGE</p>
+<br/>
+<hr/>
+<br/>
+<a th:href="@{/people/{id}/edit(id=${person.getId()})}"> <button>Edit</button> </a>
+<br/>
 <form th:method="DELETE" th:action="@{/people/{id}(id=${person.getId()})}">
   <input type="submit" value="Delete"/>
 </form>

@@ -22,7 +22,7 @@ public class PersonDAO {
                 stream().findAny().orElse(null);
     }
     public void update(int id, Person updatedPerson) {
-        jdbcTemplate.update("UPDATE PERSON fullName=?, yearOfBirth=? WHERE ID=?",updatedPerson.getFullName(),updatedPerson.getYearOfBirth(),id);
+        jdbcTemplate.update("UPDATE PERSON SET fullname=?, yearofbirth=? WHERE id=?",updatedPerson.getFullName(),updatedPerson.getYearOfBirth(),id);
     }
     public List<Person> index() {
         return jdbcTemplate.query("SELECT * from person", new PersonMapper());
