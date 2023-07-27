@@ -3,25 +3,20 @@ package library.mvc.models;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.Pattern;
+import javax.validation.constraints.Size;
 import java.util.ArrayList;
 import java.util.List;
 
 public class Person {
     private int id;
-    private List<Book> booksList;
     @NotEmpty(message = "Full name can't ne empty.")
     @Pattern(regexp = "[A-Z]\\w+ [A-Z]\\w+", message = "It's doesn't look like a full name.")
+    @Size(min = 2, max = 100, message = "Wrong full name.")
     private String fullName;
     @Min(value = 1900, message = "Year of birth have to be bigger then 1900")
     private int yearOfBirth;
-    public List<Book> getBooksList() {
-        return booksList;
-    }
-    public void setBooksList(List<Book> bookList) {
-        this.booksList = bookList;
-    }
     public Person(){
-        booksList=new ArrayList<>();
+
     }
     public void setId(int id) {
         this.id = id;

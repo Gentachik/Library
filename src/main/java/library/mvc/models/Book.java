@@ -2,13 +2,15 @@ package library.mvc.models;
 
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotEmpty;
+import javax.validation.constraints.Size;
 
 public class Book {
     private int id;
-    private int ownerId;
     @NotEmpty(message = "Book have to have name.")
-    private String name;
+    @Size(min = 2, max = 100, message = "Wrong title.")
+    private String title;
     @NotEmpty(message = "Book have to have author.")
+    @Size(min = 2, max = 100, message = "Wrong author.")
     private String author;
     @Min(value = 0, message = "Wrong year of book.")
     private int year;
@@ -17,8 +19,8 @@ public class Book {
         this.id = id;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setTitle(String title) {
+        this.title = title;
     }
 
     public void setAuthor(String author) {
@@ -31,22 +33,13 @@ public class Book {
     public int getId() {
         return id;
     }
-    public String getName() {
-        return name;
+    public String getTitle() {
+        return title;
     }
     public String getAuthor() {
         return author;
     }
     public int getYear() {
         return year;
-    }
-    public int getOwnerId() {
-        return ownerId;
-    }
-    public void setOwnerId(int ownerId) {
-        this.ownerId = ownerId;
-    }
-    public void setOwner(int personId) {
-        this.ownerId=personId;
     }
 }
