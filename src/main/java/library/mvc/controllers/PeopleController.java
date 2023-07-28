@@ -47,11 +47,12 @@ public class PeopleController {
     }
     @GetMapping("/{id}/edit")
     public String edit(@PathVariable("id") int id,Model model){
-        model.addAttribute("people", personDAO.show(id));
+        model.addAttribute("person", personDAO.show(id));
         return "people/edit";
     }
     @PatchMapping("/{id}")
     public String update(BindingResult bindingResult, @ModelAttribute("person") @Valid Person person, @PathVariable("id") int id){
+        personValidator.validate(person,bindingResult);
         if(bindingResult.hasErrors())
             return "people/edit";
 
