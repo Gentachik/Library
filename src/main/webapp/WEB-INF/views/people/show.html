@@ -16,7 +16,12 @@
     <b>Books:</b>
     <br/>
     <table th:each="book : ${books}">
-        <tr th:text="${book.getTitle()+', '+book.getAuthor()+', '+book.getYear()}">book</tr>
+        <tr>
+            <span th:text="${book.getTitle()+', '+book.getAuthor()+', '+book.getYear()}"
+                    th:style="${book.isExpired()} ?  'color: red' : 'color: black'">
+                book
+            </span>
+        </tr>
     </table>
     <hr/>
 </div>

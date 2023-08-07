@@ -17,20 +17,19 @@ public class Person {
     @NotEmpty(message = "Full name can't ne empty.")
     @Pattern(regexp = "[A-Z]\\w+ [A-Z]\\w+", message = "It's doesn't look like a full name.")
     @Size(min = 2, max = 100, message = "Wrong full name.")
-    @Column(name = "fullname")
+    @Column(name = "full_name")
     private String fullName;
     @Min(value = 1900, message = "Year of birth have to be bigger then 1900")
-    @Column(name = "yearofbirth")
+    @Column(name = "year_of_birth")
     private int yearOfBirth;
     @OneToMany(mappedBy = "owner")
     private List<Book> books;
     public Person(){
 
     }
-    public Person(String fullName, int yearOfBirth, List<Book> books) {
+    public Person(String fullName, int yearOfBirth) {
         this.fullName = fullName;
         this.yearOfBirth = yearOfBirth;
-        this.books=books;
     }
     public void setId(int id) {
         this.id = id;

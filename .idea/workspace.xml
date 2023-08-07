@@ -9,14 +9,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="52f5a818-e3aa-4cd7-aeb3-020050404494" name="Changes" comment="Adding hibernate">
-      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
+    <list default="true" id="52f5a818-e3aa-4cd7-aeb3-020050404494" name="Changes" comment="Creating a welcome page">
       <change afterPath="$PROJECT_DIR$/src/main/resources/hibernate.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/books/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/books/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/people/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/people/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/library/mvc/models/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/mvc/models/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/library/mvc/models/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/mvc/models/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/library/mvc/services/BookService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/mvc/services/BookService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/library/mvc/services/PeopleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/mvc/services/PeopleService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/sql/library.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/sql/library.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/people/show.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/people/show.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -210,7 +211,7 @@
       <workItem from="1690631141106" duration="35000" />
       <workItem from="1691311350838" duration="5886000" />
       <workItem from="1691326219638" duration="4535000" />
-      <workItem from="1691415381673" duration="2317000" />
+      <workItem from="1691415381673" duration="6271000" />
     </task>
     <task id="LOCAL-00001" summary="Starting a library application">
       <created>1690329708436</created>
@@ -261,7 +262,14 @@
       <option name="project" value="LOCAL" />
       <updated>1691415790216</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Creating a welcome page">
+      <created>1691417744250</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1691417744250</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -274,6 +282,7 @@
     <MESSAGE value="Creating a book pages" />
     <MESSAGE value="Finishing the project" />
     <MESSAGE value="Adding hibernate" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding hibernate" />
+    <MESSAGE value="Creating a welcome page" />
+    <option name="LAST_COMMIT_MESSAGE" value="Creating a welcome page" />
   </component>
 </project>
