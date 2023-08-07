@@ -25,8 +25,8 @@ public class BooksController {
         this.peopleService = peopleService;
     }
     @GetMapping()
-    public String index(Model model) {
-        model.addAttribute("books", bookService.findAll());
+    public String index(Model model, @RequestParam(value = "sort_by_year", required = false) boolean sortByYear) {
+        model.addAttribute("books", bookService.findAll(sortByYear));
         return "books/index";
     }
     @GetMapping("/{id}")

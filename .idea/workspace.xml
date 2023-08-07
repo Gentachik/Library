@@ -9,15 +9,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="52f5a818-e3aa-4cd7-aeb3-020050404494" name="Changes" comment="Creating a welcome page">
+    <list default="true" id="52f5a818-e3aa-4cd7-aeb3-020050404494" name="Changes" comment="Adding the ability to check elapsed time">
       <change afterPath="$PROJECT_DIR$/src/main/resources/hibernate.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/library/mvc/models/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/mvc/models/Book.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/library/mvc/models/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/mvc/models/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/library/mvc/services/BookService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/mvc/services/BookService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/library/mvc/services/PeopleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/mvc/services/PeopleService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/sql/library.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/sql/library.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/people/show.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/people/show.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +72,6 @@
     "DefaultHtmlFileTemplate": "HTML File",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "last_opened_file_path": "C:/eclipse workspace/Library",
     "node.js.detected.package.eslint": "true",
@@ -211,7 +203,7 @@
       <workItem from="1690631141106" duration="35000" />
       <workItem from="1691311350838" duration="5886000" />
       <workItem from="1691326219638" duration="4535000" />
-      <workItem from="1691415381673" duration="6271000" />
+      <workItem from="1691415381673" duration="7090000" />
     </task>
     <task id="LOCAL-00001" summary="Starting a library application">
       <created>1690329708436</created>
@@ -269,7 +261,14 @@
       <option name="project" value="LOCAL" />
       <updated>1691417744250</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Adding the ability to check elapsed time">
+      <created>1691421751722</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1691421751722</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -283,6 +282,7 @@
     <MESSAGE value="Finishing the project" />
     <MESSAGE value="Adding hibernate" />
     <MESSAGE value="Creating a welcome page" />
-    <option name="LAST_COMMIT_MESSAGE" value="Creating a welcome page" />
+    <MESSAGE value="Adding the ability to check elapsed time" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding the ability to check elapsed time" />
   </component>
 </project>

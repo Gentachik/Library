@@ -4,6 +4,7 @@ import library.mvc.models.Book;
 import library.mvc.models.Person;
 import library.mvc.repositories.BookRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -23,7 +24,10 @@ public class BookService {
         Optional<Book> foundBook = bookRepository.findById(id);
         return  foundBook.orElse(null);
     }
-    public List<Book> findAll(){
+    public List<Book> findAll(boolean sortByYear){
+        if(sortByYear){
+            return bookRepository.findAll(Sort.by("year"));
+        }
         return bookRepository.findAll();
     }
     public Optional<Person> findOwnerByBookId(int id) {
