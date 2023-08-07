@@ -25,8 +25,14 @@ public class BooksController {
         this.peopleService = peopleService;
     }
     @GetMapping()
-    public String index(Model model, @RequestParam(value = "sort_by_year", required = false) boolean sortByYear) {
-        model.addAttribute("books", bookService.findAll(sortByYear));
+    public String index(Model model,
+                        @RequestParam(value = "books_per_page", required = false) Integer booksPerPage,
+                        @RequestParam(value = "page", required = false) Integer page,
+                        @RequestParam(value = "sort_by_year", required = false) boolean sortByYear) {
+        if(page==null || booksPerPage==null)
+            model.addAttribute("books", bookService.findAll(sortByYear));
+        else
+            model.addAttribute("books", bookService.findWithPagination(page,booksPerPage,sortByYear));
         return "books/index";
     }
     @GetMapping("/{id}")

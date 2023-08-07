@@ -4,6 +4,7 @@ import library.mvc.models.Book;
 import library.mvc.models.Person;
 import library.mvc.repositories.BookRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -25,10 +26,17 @@ public class BookService {
         return  foundBook.orElse(null);
     }
     public List<Book> findAll(boolean sortByYear){
-        if(sortByYear){
+        if(sortByYear)
             return bookRepository.findAll(Sort.by("year"));
-        }
-        return bookRepository.findAll();
+        else
+            return bookRepository.findAll();
+
+    }
+    public List<Book> findWithPagination(Integer page, Integer booksPerPage, boolean sortByYear){
+        if(sortByYear)
+            return bookRepository.findAll(PageRequest.of(page,booksPerPage,Sort.by("year"))).getContent();
+        else
+            return bookRepository.findAll(PageRequest.of(page,booksPerPage)).getContent();
     }
     public Optional<Person> findOwnerByBookId(int id) {
         Optional<Book> book = bookRepository.findById(id);

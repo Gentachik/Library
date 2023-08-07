@@ -9,8 +9,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="52f5a818-e3aa-4cd7-aeb3-020050404494" name="Changes" comment="Adding the ability to check elapsed time">
+    <list default="true" id="52f5a818-e3aa-4cd7-aeb3-020050404494" name="Changes" comment="Add sorting books by year">
       <change afterPath="$PROJECT_DIR$/src/main/resources/hibernate.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/library/mvc/controllers/BooksController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/mvc/controllers/BooksController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/library/mvc/services/BookService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/mvc/services/BookService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -203,7 +206,7 @@
       <workItem from="1690631141106" duration="35000" />
       <workItem from="1691311350838" duration="5886000" />
       <workItem from="1691326219638" duration="4535000" />
-      <workItem from="1691415381673" duration="7090000" />
+      <workItem from="1691415381673" duration="7756000" />
     </task>
     <task id="LOCAL-00001" summary="Starting a library application">
       <created>1690329708436</created>
@@ -268,7 +271,14 @@
       <option name="project" value="LOCAL" />
       <updated>1691421751722</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Add sorting books by year">
+      <created>1691422692006</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1691422692006</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -283,6 +293,7 @@
     <MESSAGE value="Adding hibernate" />
     <MESSAGE value="Creating a welcome page" />
     <MESSAGE value="Adding the ability to check elapsed time" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding the ability to check elapsed time" />
+    <MESSAGE value="Add sorting books by year" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add sorting books by year" />
   </component>
 </project>
