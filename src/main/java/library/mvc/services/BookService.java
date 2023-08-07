@@ -39,8 +39,10 @@ public class BookService {
             return bookRepository.findAll(PageRequest.of(page,booksPerPage)).getContent();
     }
     public Optional<Person> findOwnerByBookId(int id) {
-        Optional<Book> book = bookRepository.findById(id);
-        return book.map(Book::getOwner);
+        return bookRepository.findById(id).map(Book::getOwner);
+    }
+    public List<Book> findByTitle(String findByTitle){
+        return bookRepository.findByTitleStartingWith(findByTitle);
     }
     @Transactional
     public void update(int id, Book book) {
