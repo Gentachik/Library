@@ -10,26 +10,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="52f5a818-e3aa-4cd7-aeb3-020050404494" name="Changes" comment="Adding hibernate">
-      <change afterPath="$PROJECT_DIR$/src/main/java/library/mvc/config/MySpringMvcDispatcherSerlvetIntitializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/library/mvc/repositories/BookRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/library/mvc/repositories/PeopleRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/library/mvc/services/BookService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/library/mvc/services/PeopleService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/resources/hibernate.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/library/mvc/config/SpringConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/mvc/config/SpringConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/library/mvc/config/SpringMvcDispatcherServletInitializer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/library/mvc/controllers/BooksController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/mvc/controllers/BooksController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/library/mvc/controllers/PeopleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/mvc/controllers/PeopleController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/library/mvc/dao/BookDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/mvc/dao/BookDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/library/mvc/dao/PersonDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/mvc/dao/PersonDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/library/mvc/models/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/mvc/models/Book.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/library/mvc/models/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/mvc/models/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/library/mvc/util/PersonValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/mvc/util/PersonValidator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/database.properties.origin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/books/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/books/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/people/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/people/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,6 +29,7 @@
         <option value="HTML File" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -85,26 +73,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/eclipse workspace/Library&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;4d70254b3a8e2bc38b6147fa6ee813be&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/eclipse workspace/Library",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "spring.configuration.checksum": "4d70254b3a8e2bc38b6147fa6ee813be",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;postgresql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="library.mvc.dao" />
@@ -221,7 +210,7 @@
       <workItem from="1690631141106" duration="35000" />
       <workItem from="1691311350838" duration="5886000" />
       <workItem from="1691326219638" duration="4535000" />
-      <workItem from="1691415381673" duration="379000" />
+      <workItem from="1691415381673" duration="2317000" />
     </task>
     <task id="LOCAL-00001" summary="Starting a library application">
       <created>1690329708436</created>
@@ -265,7 +254,14 @@
       <option name="project" value="LOCAL" />
       <updated>1690586567570</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Adding hibernate">
+      <created>1691415790216</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1691415790216</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
