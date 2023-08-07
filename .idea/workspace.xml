@@ -9,15 +9,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="52f5a818-e3aa-4cd7-aeb3-020050404494" name="Changes" comment="Finishing the project">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/database.properties" afterDir="false" />
+    <list default="true" id="52f5a818-e3aa-4cd7-aeb3-020050404494" name="Changes" comment="Adding hibernate">
+      <change afterPath="$PROJECT_DIR$/src/main/java/library/mvc/config/MySpringMvcDispatcherSerlvetIntitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/library/mvc/repositories/BookRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/library/mvc/repositories/PeopleRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/library/mvc/services/BookService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/library/mvc/services/PeopleService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/hibernate.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/library/mvc/config/SpringConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/mvc/config/SpringConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/library/mvc/config/SpringMvcDispatcherServletInitializer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/library/mvc/controllers/BooksController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/mvc/controllers/BooksController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/library/mvc/controllers/PeopleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/mvc/controllers/PeopleController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/library/mvc/dao/BookDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/mvc/dao/BookDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/library/mvc/dao/PersonDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/mvc/dao/PersonDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/books/show.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/books/show.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/people/edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/people/edit.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/people/new.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/people/new.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/people/show.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/people/show.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/library/mvc/models/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/mvc/models/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/library/mvc/models/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/mvc/models/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/library/mvc/util/PersonValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/mvc/util/PersonValidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/database.properties.origin" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,13 +39,15 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="HTML File" />
+        <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
@@ -76,9 +90,8 @@
     &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/eclipse workspace/SpringMVC-First-Project&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/eclipse workspace/Library&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -204,7 +217,11 @@
       <workItem from="1690397951831" duration="29866000" />
       <workItem from="1690469170798" duration="49000" />
       <workItem from="1690552007009" duration="136000" />
-      <workItem from="1690583352387" duration="3203000" />
+      <workItem from="1690583352387" duration="3267000" />
+      <workItem from="1690631141106" duration="35000" />
+      <workItem from="1691311350838" duration="5886000" />
+      <workItem from="1691326219638" duration="4535000" />
+      <workItem from="1691415381673" duration="379000" />
     </task>
     <task id="LOCAL-00001" summary="Starting a library application">
       <created>1690329708436</created>
@@ -241,7 +258,14 @@
       <option name="project" value="LOCAL" />
       <updated>1690469213791</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Finishing the project">
+      <created>1690586567570</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1690586567570</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -253,6 +277,7 @@
     <MESSAGE value="Finishing person views" />
     <MESSAGE value="Creating a book pages" />
     <MESSAGE value="Finishing the project" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finishing the project" />
+    <MESSAGE value="Adding hibernate" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding hibernate" />
   </component>
 </project>
